@@ -211,6 +211,9 @@ project.lock.json
 *.feature.xlsx.*
 *.Specs_*.html
 
+# Unity
+2020.1.3f1/
+
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
