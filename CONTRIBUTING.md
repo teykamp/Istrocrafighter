@@ -8,7 +8,7 @@ Any suggestions welcome, we are always looking to improve. These are basic conve
     So that we can consistently serve images from the CDN, always use image_path or image_tag when referring to images. Never prepend "/images/" when using image_path or image_tag.
     Also for the CDN, always use cwd-relative paths rather than root-relative paths in image URLs in any CSS. So instead of url('/images/blah.gif'), use url('../images/blah.gif').
     Comments are very useful, and in places where adding new features, oblogatory.
-    We put the opening brace ({) on the line following a function, loop or if statement.
+    We put the opening brace ({) on the same line as the function, loop or if statement declaration.
 
 Committing:
 
