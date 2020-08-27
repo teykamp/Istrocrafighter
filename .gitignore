@@ -213,6 +213,11 @@ project.lock.json
 
 # Unity
 2020.1.3f1/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
 
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
