@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CCC0D42E-96D5-3ED0-2D8B-7A09EC5F583E}</ProjectGuid>
+    <ProjectGuid>{4ABCB9DA-9FAC-1C94-15BC-5AA2E6F353B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Mirror.Examples.Cloud.GUI</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -52,16 +52,25 @@
     <UnityVersion>2020.1.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\InstantiateNetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\ServerListUI.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\ServerListUIItem.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\QuitButtonHUD.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\ApiUpdater.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\NetworkManagerListServer.cs" />
-    <Compile Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\ServerListManager.cs" />
+    <Compile Include="Assets\ShipSimulator.cs" />
+    <Compile Include="Assets\ShipTile.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Mirror\Examples\Cloud\GUI\Scripts\Mirror.Examples.Cloud.GUI.asmdef" />
+     <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
+     <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
+     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
+     <None Include="Assets\Mirror\Readme.txt" />
+     <None Include="Assets\ScriptTemplates\53-Mirror__Network Observer-NewNetworkObserver.cs.txt" />
+     <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
+     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
+     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll" />
+     <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
+     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll" />
+     <None Include="Assets\StreamingAssets\TestResults.xml" />
+     <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
+     <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
+     <None Include="Assets\Mirror\version.txt" />
+     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Users\Georg\Desktop\Unites\2020.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -250,15 +259,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:\Users\Georg\Desktop\Unites\2020.1.3f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>C:\Users\Georg\Desktop\Unites\2020.1.3f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>C:\Users\Georg\Desktop\Unites\2020.1.3f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\15.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
@@ -617,21 +617,82 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Users\Georg\Desktop\Unites\2020.1.3f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Mirror.csproj">
-      <Project>{1096C8EC-7FA1-A131-7490-3397992C1084}</Project>
-      <Name>Mirror</Name>
+    <ProjectReference Include="Mirror.Editor.csproj">
+      <Project>{59627E29-DA46-D73D-4B23-63F413767061}</Project>
+      <Name>Mirror.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Cloud.csproj">
       <Project>{AF1909B4-B56D-3B43-27AB-20198ABFDE0E}</Project>
       <Name>Mirror.Cloud</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ninja.WebSockets.csproj">
+      <Project>{0887B659-C327-1DA1-A1ED-3816227291E0}</Project>
+      <Name>Ninja.WebSockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Components.csproj">
+      <Project>{1BD90650-2129-1D3D-B733-FDF923B3E333}</Project>
+      <Name>Mirror.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.Cloud.Pong.csproj">
+      <Project>{01A9B42A-4BB1-BC2F-EFF3-35BB9DCFDCA9}</Project>
+      <Name>Mirror.Examples.Cloud.Pong</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.Cloud.GUI.csproj">
+      <Project>{CCC0D42E-96D5-3ED0-2D8B-7A09EC5F583E}</Project>
+      <Name>Mirror.Examples.Cloud.GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.example.RigidbodyPhysics.csproj">
+      <Project>{685788E5-6747-3380-A7DF-7CD553674484}</Project>
+      <Name>Mirror.example.RigidbodyPhysics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Authenticators.csproj">
+      <Project>{E458615B-0BAC-E394-CC44-9243E9A00F53}</Project>
+      <Name>Mirror.Authenticators</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.csproj">
+      <Project>{125DBDAB-E5E6-2D0D-62AF-A7B7137D17EB}</Project>
+      <Name>Mirror.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
+      <Project>{76790287-54A0-14C3-1F90-BED663E62C9C}</Project>
+      <Name>Mirror.CompilerSymbols</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Weaver.csproj">
+      <Project>{1EED41CC-3E77-42D8-DE4B-9A221D4768BD}</Project>
+      <Name>Mirror.Weaver</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.csproj">
+      <Project>{1096C8EC-7FA1-A131-7490-3397992C1084}</Project>
+      <Name>Mirror</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
